@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application form</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    
+    <section class="container">
+        <div class="nav-bar">
+            <nav>
+                 <div class="nav-row">
+                    <div class="nav-col left-side">
+                        <img src="assests/LIC-Logo.webp" alt="" style="width:100px;height:50px">
+                    </div>
+                    <div class="nav-col center-side">
+                        <span>APPLY NOW</span>
+                    </div>
+                    <div class="nav-col right-side">
+                        <a href="index.html"><button class="back-btn">Back</button></a>
+                    </div>
+                 </div>
+            </nav>
+        </div>
+    
+        
+            
+        <div class="form-box login-col "">
+            <div class="form-value glow" >
+                
+                 <div class="inner-div" >
+                    <form id="form"  action="javascript:sendmail();" method="POST">
+                    
+                        <div class="form-act-details">
+                            <div class="inputbox">
+                                <label for="">Full Name : </label>
+                                <input type="text"  placeholder="Enter Your Name" name="Name" id="Name"  required>
+                                
+                            </div>
+                            <div class="inputbox">
+                                <label for="">Email : </label>
+                                <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
+                                
+                            </div>
+                            <div class="inputbox">
+                                <label for="">Age :</label>
+                                <input type="password"  placeholder="Enter your password" required>
+                            </div>
+                            <div class="inputbox">
+                                <label for="">Date of birth : </label>
+                                <input type="date" >
+                            </div>
+                            <div class="inputbox">
+                                <label for="">Phone number : </label>
+                                <input type="tel" placeholder="Enter your phone number">
+                                
+                            </div>
+                            <div class="inputbox">
+                                <label for="">Your Qualification</label>
+                                <select name="qualification" id="Qualification" class="option">
+                                    <option value="">--Your Qualification--</option>
+                                    <option value="10th">10th</option>
+                                    <option value="HSC">HSC</option>
+                                    <option value="Diploma">Diploma</option>
+                                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                    <option value="Master's Degree">Master's Degree</option>
+                                    <option value="Doctorate">Doctorate or Higher</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="inputbox">
+                                <label for="">Occupation :</label>
+                                <input type="tel" placeholder="Enter Your Phone Number" required>
+                                
+                            </div>
+                            <div class="inputbox">
+                                <label for="">State : </label>
+                                <select name="state" id="state" class="option">
+                                    <option value="">-Your State--</option>
+                                    <option value="">ANDHRA PRADESH</option>
+                                    <option value="">ASSAM</option>
+                                    <option value="">BIHAR</option>
+                                    <option value="">CHANDIGARH</option>
+                                    <option value="">CHHATTISGARH</option>
+                                    <option value="">DELHI</option>
+                                    <option value="">GOA</option>
+                                    <option value="">GUJARAT</option>
+                                    <option value="">HARYANA</option>
+                                    <option value="">HIMACHAL PRADESH</option>
+                                    <option value="">JAMMU AND KASHMIR</option>
+                                    <option value="">JHARKHAND</option>
+                                    <option value="">KARNATAKA</option>
+                                    <option value="">KERALA</option>
+                                    <option value="">MADHYA PRADESH</option>
+                                    <option value="">MAHARASHTRA</option>
+                                    <option value="">ODISHA</option>
+                                    <option value="">PONDICHERY</option>
+                                    <option value="">PUNJAB</option>
+                                    <option value="">RAJASTHAN</option>
+                                    <option value="">TAMIL NADU</option>
+                                    <option value="">TELANGANA</option>
+                                    <option value="">UTTAR PRADESH</option>
+                                    <option value="">UTTARAKHAND</option>
+                                    <option value="">WEST BENGAL</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                            <div class="inputbox">
+                                <label for="">Pincode :</label>
+                                <input type="tel" placeholder="Enter Your Phone Number" required>
+                                
+                            </div>
+                            
+    
+                        </div>
+                        <div class="send-message" style="margin-top:10px" >
+                            <a href=""><button class="btn">Apply Now</button></a>
+                        </div>
+                        
+                    </form>
+                 </div>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+        
+</section>
+
+<!--lic-plan part-->
+
+<section class="lic-plan">
+    <div class="lic-plan-container">
+        <div class="lic-plan-row">
+            <div class="lic-plan-col plan-1">
+                <h1>Lic Plans & Policies</h1>
+                <p>Find all the available LIC Plans and policies for you and your <br>
+                     family needs. Contact our Agents by filling the form to get <br>
+                      personalized policy recommendations.</p>
+            </div>
+            <div class="lic-plan-col plan-2">
+                <button type="button" class="collap"> 1. Investment Plans <ion-icon name="add-circle-sharp" class="plus"></ion-icon>
+                    <ion-icon name="close-circle-sharp" class="close"></ion-icon>
+                </button>
+                <div class="collap-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, voluptatibus.</p>
+                </div>
+                <button type="button" class="collap"> 2. Child Plans <ion-icon name="add-circle-sharp" class="plus"></ion-icon>
+                    <ion-icon name="close-circle-sharp" class="close"></ion-icon>
+                </button>
+                <div class="collap-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, veritatis.</p>
+                </div>
+                <button type="button" class="collap">3 . Pension Plans <ion-icon name="add-circle-sharp" class="plus"></ion-icon>
+                    <ion-icon name="close-circle-sharp" class="close"></ion-icon>
+                </button>
+                <div class="collap-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, veritatis.</p>
+                </div>
+                <button type="button" class="collap"> 4. Term Insurance Plans <ion-icon name="add-circle-sharp" class="plus"></ion-icon>
+                    <ion-icon name="close-circle-sharp" class="close"></ion-icon>
+                </button>
+                <div class="collap-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, veritatis.</p>
+                </div>
+                <button type="button" class="collap">5. Cancer Cover Plans <ion-icon name="add-circle-sharp" class="plus"></ion-icon>
+                    <ion-icon name="close-circle-sharp" class="close"></ion-icon>
+                </button>
+                <div class="collap-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, veritatis.</p>
+                </div>
+                <button type="button" class="collap">6. Health Insurance Plans <ion-icon name="add-circle-sharp" class="plus"></ion-icon>
+                    <ion-icon name="close-circle-sharp" class="close"></ion-icon>
+                </button>
+                <div class="collap-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, veritatis.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--Featured Polices-->
+
+<section class="f-policy">
+    <div class="f-policy-container">
+        <h1>Feature Policy</h1>
+        <div class="f-policy-row">
+            <div class="f-policy-col">
+                <a href="">
+                    <div class="f-policy-col1">
+                        <img src="assests/Jeevan Anand.jpg" alt="">
+                        <h2>Jeevan Anand</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="f-policy-col">
+                <a href="">
+                    <div class="f-policy-col1">
+                        <img src="assests/jeevan jhanthi.jpg" alt="">
+                        <h2>Jeevan Jhanthi</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="f-policy-col">
+                <a href="">
+                    <div class="f-policy-col1">
+                        <img src="assests/Jeevan Tharun.jpg" alt="">
+                        <h2>Jeevan Tarun</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="f-policy-col">
+                <a href="">
+                    <div class="f-policy-col1">
+                        <img src="assests/CancerCover905.jpg" alt="">
+                        <h2>Cancer Cover 905</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="f-policy-col">
+                <a href="">  
+                    <div class="f-policy-col1">
+                        <img src="assests/Jemav umang.jpg" alt="">
+                        <h2>Jeevan Umang</h2>
+                    </div>
+                </a> 
+            </div>
+            <div class="f-policy-col">
+               <a href="">
+                    <div class="f-policy-col1">
+                        <img src="assests/JeevanLakshya.jpg" alt="">
+                        <h2>Jeevan Lakshya</h2>
+                    </div>
+                </a> 
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="testimonial">
+    <div class="testimonial-container">
+       <div class="testimonila-row">
+            <div class="testimonial-col">
+                <h1>LIC AGENT..</h1>
+            </div>
+            <div class="testimonial-col">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quod enim saepe molestiae laudantium culpa facilis iste expedita, beatae obcaecati.</span>
+            </div>
+            <div class="testimonial-col send-message">
+                <a href=""><button class="btn">Home</button></a>
+            </div>
+            <div class="testimonial-col team-name">
+                <span>Developed by @Nothing team</span>
+            </div>
+       </div>
+    </div>
+</section>
+
+
+
+
+</body>
+
+<script src="applynow.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

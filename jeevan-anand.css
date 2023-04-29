@@ -1,0 +1,131 @@
+*{
+    border:0;
+    outline:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+    list-style-type: none;
+}
+
+body{
+    background-color: rgb(225, 237, 241);
+}
+
+.nav-bar{
+    width: 100%;
+}
+
+.nav-bar-main{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.policy-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.policy-explain{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    background-color: #00529c;
+}
+
+.policy-explain .content{
+    color: white;
+    font-size:larger;
+    display: flex;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+}
+
+
+.apply-now{
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffcb08;
+    font-size: large;
+}
+.apply-now a{
+    text-decoration: none;
+    color: black;
+}
+
+.policy-container .policy-explain h1{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+:root{
+    --dark-blue:#2A2F4F;
+    --light-blue:#ECF2FF;
+    --dim-blue:#DAF5FF;
+}
+
+.nav-bar-main .left img{
+    width: 100px;
+}
+
+.right{
+    padding: 10px;
+    background:var(--dark-blue);
+    color: var(--light-blue) !important;
+    border-radius: 3px;
+    margin-right: 10px;
+    color: white;
+    transition: 0.5s;
+}
+
+.right:hover{
+    border: 1px solid #D23369 !important;
+    background: transparent;
+    color: var(--dark-blue) !important;
+    scale: 1.1s;
+}
+
+.policy-details{
+    display: flex;
+    border: solid black;
+    padding: 20px;
+}
+.policy-heading{
+    display: flex;
+    flex-direction: column;
+    border: solid red;
+    padding: 20px;
+    align-items: center;
+}
+
+.policy-heading .heading1{
+    
+}
+
+@media screen and (max-width: 768px) {
+    *{
+        border:0;
+        outline:0;
+        margin:0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif !important;
+        list-style-type: none;
+    }
+    .policy-container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .policy-explain{
+        border: solid white;
+        width: 100%;
+    }
+}
