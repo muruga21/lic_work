@@ -380,10 +380,12 @@ form{
     font-size: 15px;
     transition: 0.5s;
     border-bottom: 1px solid var(--dark-blue);
+    
 }
 
 .plus{
     display: block;
+    
 }
 .close{
     display: none;
