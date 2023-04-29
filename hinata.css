@@ -694,7 +694,7 @@ ion-icon{
             
         }
         .card-col .card-box-content{
-            margin: 30px 20px 30px 20px !important;
+            margin: 30px!important;
             display: block;
         }
         .card-col{
