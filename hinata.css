@@ -12,6 +12,10 @@ body{
      background:#ECF2FF;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --dark-blue:#2A2F4F;
     --light-blue:#ECF2FF;

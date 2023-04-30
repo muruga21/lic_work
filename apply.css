@@ -533,7 +533,7 @@ ion-icon{
 
 .testimonial{
     width: 100%;
-    background:var(--dark-blue);
+    background:#3E54AC;
     color: var(--light-blue);
     padding: 20px;
     font-size: 13px;
