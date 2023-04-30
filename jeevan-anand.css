@@ -305,7 +305,6 @@ body{
     background:var(--dark-blue);
     width: 80%;
     margin:auto;
-
 }
 .test-col ul a{
     color: #fff;
@@ -344,6 +343,39 @@ body{
     .test-row h1{
         text-align: center!important;
     }
+}
+@media screen and (max-width: 678px) {
+    .testimonial{
+        font-size: 13px!important;
+    }    
+    .test-log img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .test-button a button{
+        padding: 2px 5px !important;
+        transform: translateX(-15px);
+    }
+    .test-apply-container h1 , .disclaimer {
+        font-size: 15px;
+    }
+    
+    .test-row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .testimonial-div{
+        padding:0px !important;
+        padding-bottom: 20px!important;
+    }
+    .test-col{
+        font-size: 10px;
+        padding: 5px!important;
+    }
+    .testimonial-div .test-row h1{
+        font-size: 15px !important;
+    } 
 }
 
 
