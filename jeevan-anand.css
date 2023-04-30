@@ -57,11 +57,20 @@ body{
     justify-content: center;
     padding: 10px;
     background-color: #ffcb08;
+    border-radius: 3px;
     font-size: large;
+    transition: 0.5s;
 }
 .apply-now a{
     text-decoration: none;
     color: black;
+}
+
+.apply-now:hover{
+    border: 1px solid #D23369 !important;
+    background: white;
+    color: black !important;
+    scale: 1.1s;
 }
 
 .policy-container .policy-explain h1{
@@ -88,6 +97,11 @@ body{
     margin-right: 10px;
     color: white;
     transition: 0.5s;
+}
+
+.right a{
+    text-decoration: none;
+    color: white;
 }
 
 .right:hover{
@@ -129,23 +143,209 @@ body{
 }
 
 .policy-price-main{
-    display: flex;
     width: 90%;
     margin: auto;
-    border: solid red;
     align-items: center;
 }
 
 .policy-price{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-}
-/* .policy-price .policy-2000{
     display: flex;
-    border: solid yellow;
     justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.policy-price-row{
+    background-color: #e3dada;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.policy-2000-heading{
+    background-color: #00529c;
+    padding: 10px;
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+
+.policy-4000-heading{
+    background-color: #00529c;
+    padding: 10px;
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+.policy-8000-heading{
+    background-color: #00529c;
+    padding: 10px;
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+
+.Policy-price-heading2{
+    padding: 10px;
+    color: #00529c;
+    text-align: center;
+}
+
+.policy-list{
+    font-size: 15px;
+    display: flex;
+    width: 250px;
+}
+
+.policy-list li{
+    padding: 5px;
+}
+
+
+.policy-price-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.policy-price-apply{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* policy-price-row{
+    display: flex;
+    justify-content: space-between;
 } */
+
+@media screen and (max-width: 950px){
+    .policy-price{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+
+.testimonial{
+    width: 100%;
+    background: var(--dark-blue);
+    color: var(--light-blue);
+    
+    
+}
+
+.test-apply-container{
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    border-bottom: 1px solid var(--dim-blue);
+}
+.test-log h1{
+    background-image: linear-gradient( 109.4deg,  rgba(242,142,32,1) 3.4%, rgba(236,31,87,1) 90.2% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    display: inline;
+}
+.test-log img{
+    width: 100px;
+    height: 50px;
+    transform: translateY(20%);
+    margin-left: 20px;
+}
+
+.test-apply-now{
+    display: flex;
+    justify-content: space-between;
+}
+.test-button button{
+    padding: 20px 30px;
+    background:transparent;
+    border:1px solid var(--dim-blue);
+    color: var(--dim-blue);
+    text-transform: uppercase;
+    font-size: large;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.test-button button:hover{
+    background-image: linear-gradient( 109.4deg,  rgba(242,142,32,1) 3.4%, rgba(236,31,87,1) 90.2% );
+    border: 0;
+    outline: 0;
+    
+}
+.testimonial-div{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+}
+
+.test-row{
+ display: flex;   
+ justify-content: space-between;
+
+}
+.test-col{
+    flex-basis: 20%;
+    
+}
+.test-col h1{
+    padding: 10px;
+    background-image: linear-gradient( 109.4deg,  rgba(242,142,32,1) 3.4%, rgba(236,31,87,1) 90.2% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.disclaimer{
+    text-align: center;
+    padding: 30px;
+    border-top:1px solid var(--dim-blue);
+    background:var(--dark-blue);
+    width: 80%;
+    margin:auto;
+
+}
+.test-col ul a{
+    color: #fff;
+    
+}
+.test-col li{
+    padding: 5px;
+}
+
+@media screen and (max-width: 968px){
+    .test-apply-container h1{
+        font-size: 20px;
+        
+    }
+    .test-apply-now{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .test-apply-now div{
+        padding: 10px;
+    }
+    .test-apply-now button{
+        padding: 10px 20px;
+    }
+    .test-row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .test-col{
+        padding: 20px;
+        font-size: 15px;
+        text-align: left;
+    }
+    .test-row h1{
+        text-align: center!important;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     *{
@@ -193,5 +393,11 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .policy-price-row{
+        background-color: #e3dada;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
     }
 }
