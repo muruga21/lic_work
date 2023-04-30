@@ -104,7 +104,8 @@ nav{
     display: none;
    }
     .center-side{
-        width: 100%;
+      flex: 1 !important;
+      transform: translate(0);
     }   
 
    .center-side span{
