@@ -504,7 +504,6 @@ ion-icon{
         padding: 50px 0;
         width: 100%;
         position: relative;
-        margin-bottom: 5%;
       }
 
       .benefits-container{
@@ -513,9 +512,10 @@ ion-icon{
         text-align: center;
         border: 1px solid var(--dark-blue);
         box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
+        background:#fff;
       }
       .benefits-container h1{
-        padding: 20px 10px;
+        padding: 20px 10px 0 10px;
         color: var(--dark-blue);
       }
       .benefits-row{
@@ -544,6 +544,12 @@ ion-icon{
         .benefits-row{
             grid-template-columns: repeat(1,1fr);
         }
+        .benefits-container h1{
+            font-size: 15px;
+        }
+        .benefits-container p{
+            font-size: 10px;
+        }
       }
 
       /*content part*/
@@ -564,7 +570,7 @@ ion-icon{
         position: relative;
         box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
         border: 1px solid var(--dark-blue);
-        background: var(--dim-blue)
+        background: white;
 
       }
       .content-part{
@@ -613,7 +619,7 @@ ion-icon{
         border-bottom: 2px solid var(--light-blue);
     }
     
-    .col-cont-1 i , .col-cont-2 i{ 
+    .col-cont-1 span , .col-cont-2 i{ 
     margin-bottom: 3px;
     display: block;
     }
@@ -685,11 +691,11 @@ ion-icon{
 
      /*the remaining content part*/
     /* bebefits part */
-     .benefits{
-        padding: 50px 0;
+    /* .benefits{
+        /padding: 50px 0;
         width: 100%;
         position: relative;
-       
+        margin: 0;
       }
 
       .benefits-container{
@@ -698,6 +704,7 @@ ion-icon{
         text-align: center;
         border: 1px solid var(--dark-blue);
         box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
+        background: #fff !important;
       }
       .benefits-container h1{
         padding: 20px 10px;
@@ -735,7 +742,7 @@ ion-icon{
         .benefits-container p{
             font-size: 10px;
         }
-      }
+      } */
 
     /*card section*/
     .card{
@@ -764,7 +771,8 @@ ion-icon{
         padding: 20px 20px;
         border: 1px solid var(--dark-blue);
         border-radius: 10px;
-        background: #EEEEEE;
+        /* background: #EEEEEE; */
+        background:white;
         line-height: 1.5;
         color: black;
         
