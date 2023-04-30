@@ -217,8 +217,8 @@ ion-icon{
 
     #four{
        transform: translateY(-10px);
-       right: 20px;
-       top: 40px;
+       right: 5%;
+       top:50%;
        cursor: pointer;
     }
 }

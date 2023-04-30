@@ -1,3 +1,24 @@
+// navbar section 
+
+
+
+const sub_menu = document.querySelector(".right-side");
+
+function show(){
+  sub_menu.style.right="0px";
+}
+function hide(){
+  sub_menu.style.right="-45%";
+}
+
+
+
+
+
+
+// js code for plus and minus flip plan secton
+
+
 const coll = document.getElementsByClassName('collap');
 
 let i;

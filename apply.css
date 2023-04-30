@@ -17,6 +17,9 @@
     --peach-blue:#56b3df;
 }
 
+a{
+    text-decoration: none;
+}
 
 .container{
     
@@ -73,7 +76,7 @@ nav{
 }
 
 .plan-btn{
-    background:#fff;
+    background:transparent;
     color: var(--peach-blue) !important;
     transition: 0.5s;
 }
@@ -89,29 +92,71 @@ nav{
     scale: 1.1s;
 }
 
+#four, #close{
+    display:none;
+}
+
     /* nav-bar for mobile screen */
 
 @media screen and (max-width: 678px) {
-    .back-btn , .login-in-btn{
-        padding: 5px 10px !important;
-        font-size: 10px !important;
-    }
-    .left-side, .right-side{
-        display: none;
-    }
+   .left-side img{
+    display: none;
+   }
     .center-side{
-        color: var(--light-blue);
+        width: 100%;
+    }   
+
+   .center-side span{
+    padding: 10px 20px;
+    
+   }
+    .right-side{
+    position: absolute;
+    border: 1px solid black;
+    right: -45%;
+    top: 0px;
+    z-index: 2;
+    min-height: 100vh;
+    width: 45%;
+    background:var(--peach-blue);
+    color:#fff;
+    text-align: center;
+    display: block;
+    transition: 1s ease;
     }
-    .nav-bar{
-        background-color: var(--dark-blue) !important;
-        color: var(--light-blue) !important;
-    }
-    .nav-row{
-        padding: 10px;
-        }
-    .nav-col{
-        flex-basis: 100%;
-    }
+   .right-side button{
+    display: block;
+    transform:translateY(5%);
+    font-size: 30px;
+    font-weight: 600;
+    transform: translate(20px,85%);
+    margin-bottom: 5%;
+   }
+   .plan-btn{
+        color: #fff !important;
+   }
+   #four{
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    display:block;
+    cursor: pointer;
+    color: var(--peach-blue) !important;
+   }
+   #close{
+    position: absolute;
+    left: 10%;
+    top:2.5%;
+    display: block;
+    cursor: pointer;
+    padding: 3%;
+   }
+   #close:hover{
+    background:#fff;
+    color: var(--peach-blue);
+    border-radius: 100%;
+    
+   }
 
 }
 
@@ -120,6 +165,7 @@ nav{
 .apply-now-div{
     padding: 20px;
     text-align: center;
+    z-index: 0;
 }
 
 h2{
@@ -130,7 +176,7 @@ h2{
 
 form{
     padding: 20px;
-    z-index: -1;
+    
 }
 
 .form-box{
@@ -148,7 +194,7 @@ form{
 }
 
 .inner-div{
-    z-index: 1000;
+   
     position: relative;
     background:white;   
 }
@@ -156,7 +202,7 @@ form{
 .form-act-details{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    z-index: -3;
+    
 }
 
 .form-act-details label{
@@ -333,7 +379,7 @@ form{
     background:#fff;
     color:var(--gray-blue);
     cursor: pointer;
-    padding: 18px;
+    padding: 20px;
     width: 100%;
     border: none;
     text-align: left;
@@ -353,7 +399,7 @@ form{
     display: none;
 }
 
-ion-icon{
+.collap ion-icon{
     position: absolute;
     right: 30px;
     top: 20px;
@@ -393,6 +439,9 @@ ion-icon{
     .lic-plan-col{
         margin-bottom: 20px;
     }
+    .collap{
+        padding: 13px;
+    }
 
 }
 
@@ -412,12 +461,12 @@ ion-icon{
         margin-bottom: 30px;
     }
     .collap{
-        padding: 10px;
+        padding: 15px;
     }
     .lic-plan.plan-1 h1{
         font-size: 15px;
     }
-    ion-icon{
+    .collap ion-icon{
         top:15px;
     }
 
