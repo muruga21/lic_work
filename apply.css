@@ -1,16 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
 }
 
+
 :root{
-    --dark-blue:#2A2F4F;
+     --dark-blue:#2A2F4F; 
+    --gray-blue:#336077;
     --light-blue:#ECF2FF;
     --dim-blue:#DAF5FF;
+    --peach-blue:#56b3df;
 }
 
 
@@ -18,9 +22,6 @@
     
     position: relative;
     background-image: linear-gradient(5deg,#fff 0%,#f5f5f5 100%)!important;
-    /* background-image: url(assests/holi-color-background-white-background.jpg);
-    background-repeat: no-repeat ;
-    background-size: cover ; */
 }
 
 /*the navbar of the apply form*/
@@ -28,11 +29,8 @@
 .nav-bar{
     width: 100%;
     padding: 10px;
-    /*background:var(--light-blue);*/
     background: rgba(255,254,254,255) !important;
-    /* border: 1px solid #000; */
     box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
-    
 }
 
 nav{
@@ -46,7 +44,6 @@ nav{
    
 }
 .right-side{
-    border-left:1px solid var(--dark-blue);
     padding: 10px;
 }
 .right-side button{
@@ -71,29 +68,28 @@ nav{
     color: var(--dark-blue);
 }
 
-.login-in-btn{
-    border: 1px solid var(--dark-blue) !important;
-    background: transparent;
-    transition: 0.5s;
-    
-}
-.login-in-btn:hover{
-    background:var(--dark-blue);
-    color: var(--light-blue);
-    scale: 1.1;
+.right-side button{
+    font-size: large;
 }
 
-.back-btn{
-    background:var(--dark-blue);
+.plan-btn{
+    background:#fff;
+    color: var(--peach-blue) !important;
+    transition: 0.5s;
+}
+.policy-btn{
+    background:var(--peach-blue);
     color: var(--light-blue) !important;
     transition: 0.5s;
 }
-.back-btn:hover{
+ .policy:hover{
     border: 1px solid #D23369 !important;
     background: transparent;
     color: var(--dark-blue) !important;
     scale: 1.1s;
 }
+
+    /* nav-bar for mobile screen */
 
 @media screen and (max-width: 678px) {
     .back-btn , .login-in-btn{
@@ -118,15 +114,13 @@ nav{
     }
 
 }
-/*the apply form list*/
+
+    /*the apply form list*/
 
 .apply-now-div{
     padding: 20px;
     text-align: center;
-    /* background: var(--dark-blue);
-    color: var(--light-blue); */
 }
-
 
 h2{
     color: var(--light-blue);
@@ -137,7 +131,6 @@ h2{
 form{
     padding: 20px;
     z-index: -1;
-    
 }
 
 .form-box{
@@ -145,65 +138,32 @@ form{
         position: relative;
         color: #fff;
         padding: 100px 0;
-        background-image: linear-gradient(5deg,#fff 0%,#f5f5f5 100%)!important;
-    
-    }
+        background-image: linear-gradient(5deg,#fff 0%,#f5f5f5 100%)!important;    
+}
 .form-value{
     width: 75%;
     margin: auto;
     position: relative;
-    
     box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
 }
 
-/* .glow::before , .glow::after{
-    content: '';
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    background: linear-gradient(45deg,#e6fb04,#ff6600,#00ff66,#00ffff,#ff00ff,#ff0099,#6e0dd0,#ff3300,#099fff);
-    background-size: 400%;
-    width: calc(100% + 1px);
-    height: calc(100% + 1px);
-    z-index: 0;
-    animation:animate 20s linear infinite;
-} */
 .inner-div{
     z-index: 1000;
     position: relative;
-    /* background-color: var(--light-blue); */
-    background:white;
-   
-}
-
-/* @keyframes animate{
-    0% {
-        background-position: 0 0;
-    }
-    50%{
-        background-position: 400% 0;
-    }
-    100%{
-        background-position: 0 0;
-    }
-} */
-.glow::after{
-    filter: blur(5px);
-    
+    background:white;   
 }
 
 .form-act-details{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     z-index: -3;
-    
 }
 
 .form-act-details label{
     display: block;
 }
 .form-act-details input{
-    padding: 5px 10px;
+    padding: 10px 10px;
     width: 80%;
     border: 0;
     outline: 0;
@@ -215,7 +175,6 @@ form{
     color: #000 !important;
     opacity: 0.5;
     font-size: 15px;
-    
 }
 
 .form-act-details input:focus , .form-act-details textarea:focus{
@@ -247,7 +206,6 @@ form{
     cursor: pointer;
     transition: .5s;
     border-radius: 10px;
-
 }
 
 .btn:hover{
@@ -281,8 +239,10 @@ form{
 }
 .option{
     width: 80%;
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
+
+/* Apply now form screen for tablets */
 @media  screen and (max-width: 1024px) {
     .form-value{
         width:90%;
@@ -291,8 +251,9 @@ form{
     .form-box{
         padding: 50px 0 100px;
     }
-        
 }
+
+/* Apply now form screen for mobile screen */
 
 @media  screen and (max-width: 678px) {
    
@@ -340,16 +301,16 @@ form{
 .lic-plan{
     width: 100%;
     padding: 50px;
-    background:#3E54AC;
+    background:var(--dark-blue);
     color: #fff;
     margin-bottom:5%;
+    font-weight: 400;
 }
 
 .lic-plan-container{
     width: 70%;
     margin: auto;
 }
-
 
 .lic-plan-row{
     display:flex;
@@ -370,7 +331,7 @@ form{
 .collap{
     position:relative;
     background:#fff;
-    color:var(--dark-blue);
+    color:var(--gray-blue);
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -380,7 +341,8 @@ form{
     font-size: 15px;
     transition: 0.5s;
     border-bottom: 1px solid var(--dark-blue);
-    
+    height: 16%;
+    margin-bottom: 2px;
 }
 
 .plus{
@@ -394,13 +356,13 @@ form{
 ion-icon{
     position: absolute;
     right: 30px;
-    top: 24px;
+    top: 20px;
 }
 
 .active , .collap:hover {
     background: var(--dim-blue);
     display: block;
-    
+   
 }
 .active > .plus{
     display: none;
@@ -415,6 +377,7 @@ ion-icon{
     overflow: hidden;
     background:#fff;
     color: var(--dark-blue);    
+    margin-bottom: 2px;
 }
 
 @media screen and (max-width: 968px){
@@ -429,11 +392,11 @@ ion-icon{
     }
     .lic-plan-col{
         margin-bottom: 20px;
-        
     }
 
 }
 
+    /* lic-plan section for mobile screen */
 
 @media screen and (max-width:768px){
     .lic-plan{
@@ -460,7 +423,7 @@ ion-icon{
 
 }
 
-/*featured policies*/
+    /*featured policies*/
 
 .f-policy{
     width: 100%;
@@ -473,6 +436,11 @@ ion-icon{
     width:80%;
     margin: auto;
     text-align: center;
+}
+
+.f-policy-container h1{
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 .f-policy-row{
@@ -497,8 +465,6 @@ ion-icon{
     align-items: center ;
     flex-direction: column;
     text-decoration: none;
-    
-    
 }
 
 .f-policy-col1{
@@ -508,12 +474,16 @@ ion-icon{
     box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
     transition: 1s; 
 }
+
 .f-policy-col1:hover{
     scale:1.1;
 }
+
 .f-policy-col1 img{
     width: 100%;
 }
+
+/* FEATURED POLICES FOR TABLETS SCREEN */
 
 @media screen and (max-width: 968px){
     .f-policy-row{
@@ -523,17 +493,20 @@ ion-icon{
         width: 100%;
     }
 }
+
+/* FEATURED POLICIES FOR MOBILE SCREEN */
+
 @media screen and (max-width: 678px){
     .f-policy-row{
         grid-template-columns: repeat(1,1fr);
     }
 }
 
-/*testimonial*/
+    /*testimonial*/
 
 .testimonial{
     width: 100%;
-    background:#3E54AC;
+    background:var(--dark-blue);
     color: var(--light-blue);
     padding: 20px;
     font-size: 13px;
@@ -544,7 +517,6 @@ ion-icon{
     margin: auto;
     line-height:1.5;
     text-align: center;
-
 }
 
 .testimonial-col{
@@ -559,9 +531,9 @@ ion-icon{
     outline: 0;
     background:#56b3df;
     color: var(--light-blue);
-    transition: .5s;
-    
+    transition: .5s;   
 }
+
 .team-name{
     color: var(--light-blue);
 }
@@ -569,6 +541,8 @@ ion-icon{
 .sub-test button:hover{
     scale: 1.1;
 }
+
+/* TESTIMONILA SECTION FOR MOBILE SCREEN */
 
 @media  screen  and (max-width:768px){
     .sub-test button{
