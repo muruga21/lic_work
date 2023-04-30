@@ -231,8 +231,6 @@ body{
     .policy-price-row{
         margin-bottom: 20px;
     } 
-
-   
 }
 
 
@@ -245,14 +243,16 @@ body{
         font-family: 'Poppins', sans-serif !important;
         list-style-type: none;
     }
-    /*.Container{
+    .Container{
         padding: 0;
-    } */
+    } 
+    .policy{
+        padding: 0;
+        margin: 0;
+    }
     .policy-container{
         margin: 0;
         padding: 0;
-        width: 300px;
-        padding-top: 20px;
     }
     .policy-explain{
         border: solid white;
@@ -281,11 +281,13 @@ body{
         text-align: center;
     }
     .policy-details{
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .policy-price-row{
+        margin: 0;
         background-color: #e3dada;
         display: flex;
         flex-direction: column;
