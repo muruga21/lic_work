@@ -339,7 +339,7 @@ ion-icon{
 /*sliding section*/
     .slider{
         margin-top:80px;
-        margin-bottom:5%;
+        margin-bottom:6%;
         text-align: center;
         
     }
@@ -386,6 +386,12 @@ ion-icon{
         cursor: pointer;
         white-space: nowrap;
     }
+    .w3-button:hover{
+        background: #fff !important;
+        color: #000 !important; 
+        border: 1px solid black;
+    }
+
     .slider h1{
         padding-top: 30px;
         padding-bottom: 30px;
@@ -683,7 +689,7 @@ ion-icon{
         padding: 50px 0;
         width: 100%;
         position: relative;
-        margin-bottom: 5%;
+       
       }
 
       .benefits-container{
@@ -766,6 +772,7 @@ ion-icon{
         transition: .5s;
         font-size: 12px;
         font-weight: 400;
+        height: 80%;
     }
     .card-box-content:hover{
         transform: translateY(-10px);
@@ -828,7 +835,7 @@ ion-icon{
 
     }
     .ext-web-container{
-        width: 100%;
+        width: 85%;
         margin: auto;
         padding-top: 40px;
     }
