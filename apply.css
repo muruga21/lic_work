@@ -69,6 +69,7 @@ nav{
     font-size: large;
     font-weight: 600;
     color: var(--dark-blue);
+    transform:translateX(50%);
 }
 
 .right-side button{
