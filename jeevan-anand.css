@@ -236,7 +236,9 @@ body{
     margin-bottom: 10px;
     margin: 20px;
 }
-
+.policy-full-detail-container{
+    background-color: #bec1f3;
+}
 .policy-full-detail-explanation{
     margin: 20px;
     margin-top: 10px;
@@ -473,4 +475,17 @@ body{
     .testimonial-div .test-row h1{
         font-size: 15px !important;
     } 
+}
+
+
+.policy-benifits-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+.policy-benifits-heading{
+    font-size: 30px;
 }
