@@ -221,6 +221,31 @@ body{
     justify-content: center;
 }
 
+.policy-full-detail-container{
+    display: flex;
+    flex-direction: column;
+    border-top: solid black;
+    border-bottom: solid black;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.policy-full-detail-heading{
+    font-size: x-large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 20px;
+}
+
+.policy-full-detail-explanation{
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.policy-full-detail-explanation p{
+    padding: 10px;
+}
+
 @media screen and (max-width: 950px){
     .policy-price{
         display: flex;
