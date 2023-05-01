@@ -389,7 +389,7 @@ form{
     font-size: 15px;
     transition: 0.5s;
     border-bottom: 1px solid var(--dark-blue);
-    height: 16%;
+    
     margin-bottom: 2px;
 }
 
