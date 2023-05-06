@@ -1,5 +1,21 @@
 var sub_items = document.querySelector(".tut-nav-sub-item");
 
+
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }else{
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el)=> observer.observe(el));
+
+
 let fl = 0;
 
 function showmenu(element){
@@ -33,18 +49,7 @@ function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
-/*let slider_img = document.getElementsByClassName("myslides");
-let i = 0;
-function show_slide_img(){
-  if(i==3){
-    i = 0;
-  }
-  for(i = 0;i<slider_img.length;i++){
-    slider_img[i].style.display = "none";
-  }
-  slider_img[i].style.display = "block" ;
-  i+=1;
-}*/
+
 let slider_img = document.querySelectorAll(".myslides");
 let v = 0;
 function change_image(){
