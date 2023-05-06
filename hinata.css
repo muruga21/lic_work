@@ -223,7 +223,7 @@ ion-icon{
     #four{
        transform: translateY(-10px);
        right: 5%;
-       top:50%;
+       top:4%;
        cursor: pointer;
     }
 }
@@ -539,10 +539,10 @@ ion-icon{
         grid-template-columns: repeat(1,1fr);
     }
     .benefits-container h1{
-        font-size: 15px;
+        font-size: 18px;
     }
     .benefits-container p{
-        font-size: 10px;
+        font-size: 13px;
     }
 }
 /*content part*/
@@ -913,6 +913,10 @@ ion-icon{
     }
     .feel-free-col{
         margin-bottom: 20px;
+    }
+    .feel-free-col input , .feel-free-col textarea{
+        width: 100%;
+        padding: 8px 8px;
     }
     
 }
