@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="hinata.css">
-    
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <style>
-        
         .bounce {
             height: 50px;
             overflow: hidden;
@@ -21,7 +21,7 @@
             border: 1px solid #4a4a4a;
             margin-bottom: 80px;
         }
-        
+
         .bounce p {
             position: absolute;
             width: 100%;
@@ -36,76 +36,77 @@
             -webkit-animation: bouncing-text 5s linear infinite alternate;
             animation: bouncing-text 10s linear infinite alternate;
         }
-        
+
         @-moz-keyframes bouncing-text {
             0% {
                 -moz-transform: translateX(50%);
             }
+
             100% {
                 -moz-transform: translateX(-50%);
             }
         }
-        
+
         @-webkit-keyframes bouncing-text {
             0% {
                 -webkit-transform: translateX(50%);
             }
+
             100% {
                 -webkit-transform: translateX(-50%);
             }
         }
-        
+
         @keyframes bouncing-text {
             0% {
                 -moz-transform: translateX(50%);
                 -webkit-transform: translateX(50%);
                 transform: translateX(50%);
             }
+
             100% {
                 -moz-transform: translateX(-50%);
                 -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
             }
         }
-        
-
-
     </style>
 
 </head>
+
 <body>
 
-<!--navigation bar-->
-<section class="header">
+    <!--navigation bar-->
+    <section class="header">
 
         <div class="tut-nav w-nav" ">
-            <div class="tut-nav-container w-container">
-                <div class="tut-flex-1">
-                    <a href="" class="tut-nav__brand w-nav-brand">
-                        <img src="assests/logo1.png" alt="">
-                        <!--<div class="tut-nav_brand_text">
+            <div class=" tut-nav-container w-container">
+            <div class="tut-flex-1">
+                <a href="" class="tut-nav__brand w-nav-brand">
+                    <img src="assests/logo1.png" alt="">
+                    <!--<div class="tut-nav_brand_text">
                             LIC INSURANCE 
                         </div>-->
-                    </a>
-                </div>
-                <div class="tut-flex-2">
-                    <ion-icon name="reorder-four-sharp" id="four" onclick="show()" style="color: #000;"></ion-icon>
-                    <nav class="tut-nav_menu w-nav-menu" role="navigation">
-                       
-                        <a href="#" class="tut-nav__link w-nav-link " onclick="showmenu(this)" >Profile</a>
-                        <div class="tut-nav-sub-item invisible">
-                            <a href="">About Us</a>
-                            <a href="">Video</a>
-                        </div>
-                        <a href="#" class="tut-nav__link w-nav-link">Download</a>
-                        <a href="apply.html" class="tut-nav__link w-nav-link">Apply Now</a>
-                        <a href="#benefits"  class="tut-nav__link w-nav-link">Benefits</a>
-                        <ion-icon name="close-sharp" id="close" onclick="hide(this)"></ion-icon>
-                    </nav>
-                </div>
-                
-                
+                </a>
             </div>
+            <div class="tut-flex-2">
+                <ion-icon name="reorder-four-sharp" id="four" onclick="show()" style="color: #000;"></ion-icon>
+                <nav class="tut-nav_menu w-nav-menu" role="navigation">
+
+                    <a href="#" class="tut-nav__link w-nav-link " onclick="showmenu(this)">Profile</a>
+                    <div class="tut-nav-sub-item invisible">
+                        <a href="">About Us</a>
+                        <a href="">Video</a>
+                    </div>
+                    <a href="#" class="tut-nav__link w-nav-link">Download</a>
+                    <a href="apply.html" class="tut-nav__link w-nav-link">Apply Now</a>
+                    <a href="#benefits" class="tut-nav__link w-nav-link">Benefits</a>
+                    <ion-icon name="close-sharp" id="close" onclick="hide(this)"></ion-icon>
+                </nav>
+            </div>
+
+
+        </div>
         </div>
 
 
@@ -113,71 +114,81 @@
         <div class="home-page-content">
             <div class="row">
                 <div class="column-lic-agent left">
-                    <h1 class="sub-item"> <span>Life Insurance Corporation</span> </h1> 
+                    <h1 class="sub-item"> <span>Life Insurance Corporation</span> </h1>
                     <h4 class="sub-item">BE YOUR OWN BOSS - BE AN LIC AGENT
-                        FULL-TIME, PART-TIME <br></br> ANY-TIME EARN INCOME LIFE TIME</h4>  
-                        <a href="apply.html"><button > APPLY NOW </button></a>
+                        FULL-TIME, PART-TIME <br></br> ANY-TIME EARN INCOME LIFE TIME</h4>
+                    <a href="apply.html"><button> APPLY NOW </button></a>
                 </div>
 
             </div>
         </div>
-        
-</section>
+
+    </section>
 
 
-<!--slider partt-->
- <section class="slider">
-<div  class="bounce"><p>KINDLY REGISTER FOR MORE INFORMATION</p> </div>
+    <!--slider partt-->
+    <section class="slider">
+        <div class="bounce">
+            <p>KINDLY REGISTER FOR MORE INFORMATION</p>
+        </div>
 
         <h1>JOIN LIC OF INDIA AS INSURANCE ADVISOR AND BE PART OF MOST PROFITABLE CAREER.</h1>
         <div class="img-container">
-            <img class="myslides" src="assests/health.jpg" alt="" style="width:100%" loading="eager"
-            >
-            <img class="myslides"" src="assests/slide2.jpg" alt="" style="width:100%">
-            <img class="myslides" src="assests/pensionplus.jpg" alt="" style="width:100%" >
+            <img class="myslides" src="assests/health.jpg" alt="" style="width:100%" loading="eager">
+            <img class="myslides"" src=" assests/slide2.jpg" alt="" style="width:100%">
+            <img class="myslides" src="assests/pensionplus.jpg" alt="" style="width:100%">
 
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
         <div class="slider-apply-now">
-            <a href="apply.html" ><button class="btn-one" >APPLY NOW</button></a>
+            <a href="apply.html"><button class="btn-one">APPLY NOW</button></a>
         </div>
     </section>
-        
-<!--remainging-web-page-->
+
+    <!--remainging-web-page-->
 
 
-<section class="rem-page">
+    <section class="rem-page">
 
-    <!--content-part-->
-    <div class="container">
+        <!--content-part-->
+        <div class="container">
 
             <div class="content-part">
                 <div class="col-cont-1 cont-col">
                     <h1>Protection and security for your life's journey - choose LIC</h1>
-                    
-                        <span><img src="assests/next.png" alt="" class="success-img"></a>Life is unpredictable, but with LIC, you can be prepared for anything.</span> 
-                        <span><img src="assests/next.png" alt="" class="success-img">Secure your future with LIC - because life is too precious to leave to chance.</span> 
-                        <span><img src="assests/next.png" alt="" class="success-img">Plan for tomorrow, today - with LIC by your side.</span> 
-                        <span><img src="assests/next.png" alt="" class="success-img">LIC - your trusted partner for financial security and peace of mind.</span> 
-                        <span><img src="assests/next.png" alt="" class="success-img">LIC - the name you can count on for reliable and affordable insurance solutions.</span> 
-                        <span><img src="assests/next.png" alt="" class="success-img">Protect your loved ones from life's uncertainties - choose LIC.</span> 
-                        <span><img src="assests/next.png" alt="" class="success-img">LIC - where financial security meets peace of mind.</span> 
-                    
+
+                    <span><img src="assests/next.png" alt="" class="success-img"></a>Life is unpredictable, but with
+                        LIC, you can be prepared for anything.</span>
+                    <span><img src="assests/next.png" alt="" class="success-img">Secure your future with LIC - because
+                        life is too precious to leave to chance.</span>
+                    <span><img src="assests/next.png" alt="" class="success-img">Plan for tomorrow, today - with LIC by
+                        your side.</span>
+                    <span><img src="assests/next.png" alt="" class="success-img">LIC - your trusted partner for
+                        financial security and peace of mind.</span>
+                    <span><img src="assests/next.png" alt="" class="success-img">LIC - the name you can count on for
+                        reliable and affordable insurance solutions.</span>
+                    <span><img src="assests/next.png" alt="" class="success-img">Protect your loved ones from life's
+                        uncertainties - choose LIC.</span>
+                    <span><img src="assests/next.png" alt="" class="success-img">LIC - where financial security meets
+                        peace of mind.</span>
+
                 </div>
                 <div class="col-cont-2 cont-col">
 
                     <div class="contact-us-flex">
                         <h1>CONTACT US</h1>
-                    <i> <img src="assests/whatsapp.png" alt="" class="contact-us-img"> <a href="">Whatsapp</a> </i>
-                    <i> <img src="assests/facebook.png" alt=""  class="contact-us-img"> <a href="">FaceBook</a> </i>
-                    <i> <img src="assests/instagram.png" alt=""  class="contact-us-img">  <a href="">Instagram</a> </i>
-                    <i> <img src="assests/linkedin.png" alt=""  class="contact-us-img"> <a href="">Linkedin</a> </i>
-                    <i> <img src="assests/customer-support.png" alt=""  class="contact-us-img"> <a href="">Customer Support</a></i>
-                    
+                        <i> <img src="assests/whatsapp.png" alt="" class="contact-us-img"> <a href="">Whatsapp</a> </i>
+                        <i> <img src="assests/facebook.png" alt="" class="contact-us-img"> <a href="">FaceBook</a> </i>
+                        <i> <img src="assests/instagram.png" alt="" class="contact-us-img"> <a href="">Instagram</a>
+                        </i>
+                        <i> <img src="assests/linkedin.png" alt="" class="contact-us-img"> <a href="">Linkedin</a> </i>
+                        <i> <img src="assests/customer-support.png" alt="" class="contact-us-img"> <a href="">Customer
+                                Support</a></i>
+
                     </div>
 
-                    
+
                 </div>
             </div>
 
@@ -197,39 +208,43 @@
                     <div class="benefits-inner-col">
                         <p>
                             <img src="assests/commission.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est possimus architecto repellat quaerat nobis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est possimus architecto
+                            repellat quaerat nobis!</p>
                         </p>
-    
+
                     </div>
                 </div>
                 <div class="benefits-col">
                     <div class="benefits-inner-col">
                         <p>
                             <img src="assests/cash.png" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae alias aliquid blanditiis voluptatum dolor adipisci.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae alias aliquid blanditiis
+                            voluptatum dolor adipisci.</p>
                         </p>
-    
+
                     </div>
                 </div>
                 <div class="benefits-col">
                     <div class="benefits-inner-col">
                         <p>
                             <img src="assests/retirement.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus sunt officiis iure molestiae. Enim.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus sunt officiis iure
+                            molestiae. Enim.</p>
                         </p>
                     </div>
                 </div>
                 <div class="benefits-col">
                     <div class="benefits-inner-col">
-                       <p>
-                        <img src="assests/reward.png" alt="">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt illo aliquam corrupti aspernatur nam .</p>
-                       </p>
+                        <p>
+                            <img src="assests/reward.png" alt="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt illo aliquam corrupti
+                            aspernatur nam .</p>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    
+
     </section>
 
     <!-- card section -->
@@ -241,27 +256,36 @@
                     <div class="card-box-content card-box-1">
                         <div class="content">
                             <h3>HOW CAN I BECOME AN LIC AGENT</h3>
-                        <img src="assests/success.png" alt="" class="success-img">The minimum age to become an LIC agent is 18 years. <br>
-                        <img src="assests/success.png" alt="" class="success-img"> The candidate should have completed high school education.
-                        <br>
-                        <img src="assests/success.png" alt="" class="success-img">communication skills, networking skills, sales skills. <br>
-                        <img src="assests/success.png" alt="" class="success-img">The candidate should not have a criminal record. <br>
-                        <img src="assests/success.png" alt="" class="success-img">The candidate needs to undergo training from LIC<br>
+                            <img src="assests/success.png" alt="" class="success-img">The minimum age to become an LIC
+                            agent is 18 years. <br>
+                            <img src="assests/success.png" alt="" class="success-img"> The candidate should have
+                            completed high school education.
+                            <br>
+                            <img src="assests/success.png" alt="" class="success-img">communication skills, networking
+                            skills, sales skills. <br>
+                            <img src="assests/success.png" alt="" class="success-img">The candidate should not have a
+                            criminal record. <br>
+                            <img src="assests/success.png" alt="" class="success-img">The candidate needs to undergo
+                            training from LIC<br>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="card-col card-col-1 card-flex-end">
                     <div class="card-box-content card-box-2">
                         <div class="content">
                             <h3>LIC AGENT PROFILE</h3>
-                            <img src="assests/success.png" alt="" class="success-img">Strong communication and interpersonal skills <br>
+                            <img src="assests/success.png" alt="" class="success-img">Strong communication and
+                            interpersonal skills <br>
                             <img src="assests/success.png" alt="" class="success-img">Sales and marketing skills<br>
-                            <img src="assests/success.png" alt="" class="success-img">Knowledge of the insurance industry <br>
-                            <img src="assests/success.png" alt="" class="success-img">Time management and organizational skills  <br>
-                            <img src="assests/success.png" alt="" class="success-img">Honesty and integrity to maintain the trust of their clients <br>
+                            <img src="assests/success.png" alt="" class="success-img">Knowledge of the insurance
+                            industry <br>
+                            <img src="assests/success.png" alt="" class="success-img">Time management and organizational
+                            skills <br>
+                            <img src="assests/success.png" alt="" class="success-img">Honesty and integrity to maintain
+                            the trust of their clients <br>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -271,30 +295,33 @@
                         <div class="content">
                             <h3>LIC CAREER BENEFITS</h3>
                             <img src="assests/success.png" alt="" class="success-img">Commission upto 35 % <br>
-                            <img src="assests/success.png" alt="" class="success-img">Renewal Commission ranging from 5 to 10 %<br>
-                            <img src="assests/success.png" alt="" class="success-img">International Recognition by M.D.R.T(USA)<br>
+                            <img src="assests/success.png" alt="" class="success-img">Renewal Commission ranging from 5
+                            to 10 %<br>
+                            <img src="assests/success.png" alt="" class="success-img">International Recognition by
+                            M.D.R.T(USA)<br>
                             <img src="assests/success.png" alt="" class="success-img">Bussiness You can earn<br>
                             <img src="assests/success.png" alt="" class="success-img">Club Membership benefits etc.<br>
                         </div>
-                 
+
                     </div>
-                    
+
                 </div>
                 <div class="card-col card-col-2 card-flex-end">
-                    
+
                     <div class="card-box-content card-box-4">
                         <div class="content">
                             <h3>GREAT OPPORTUNITY</h3>
                             <img src="assests/success.png" alt="" class="success-img">Increase your monthly income<br>
                             <img src="assests/success.png" alt="" class="success-img">Guaranteed life long pension. <br>
-                            <img src="assests/success.png" alt="" class="success-img">Raise your family status financially <br>
+                            <img src="assests/success.png" alt="" class="success-img">Raise your family status
+                            financially <br>
                             <img src="assests/success.png" alt="" class="success-img">Lorem ipsum dolor sit amet. <br>
                             <img src="assests/success.png" alt="" class="success-img">Lead world class life <br>
                         </div>
-                        
-                    
-                    </div>  
-                        
+
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -302,7 +329,7 @@
 
     <section class="three-ext-web">
         <div class="ext-web-container">
-            
+
             <div class="ext-web-row">
                 <a href="https://licindiapune.in/index.php">
                     <div class="ext-web-col">
@@ -330,17 +357,44 @@
                             <img src="assests/service-3.png" alt="">
                         </div>
                         <div class="ext-web-col-content ext-web-col-h2">
-                            <h2><h2>Pradhan Mantri Jeevan Jyoti Bima Yojana</h2></h2>
+                            <h2>
+                                <h2>Pradhan Mantri Jeevan Jyoti Bima Yojana</h2>
+                            </h2>
                         </div>
                     </div>
                 </a>
-                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Feel Free ask anything -->
+    <section class="feel-free">
+        <div class="feel-free-cont">
+            <div class="feel-free-row">
+                <div class="feel-free-col">
+                    <div class="feel-free-inner">
+                        <h1>Feel free to ask anything</h1>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                        <textarea name="" id="" cols="1" rows="4" placeholder="Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </div>
+
+                </div>
+                <div class="feel-free-col">
+                    <div class="feel-free-inner">
+                        <h1>Where you can find us</h1>
+                        <p>our location</p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
 
 
-<!--testimonial section-->
+    <!--testimonial section-->
     <section class="testimonial">
         <div class="test-apply-container">
             <div class="test-apply-now">
@@ -349,13 +403,13 @@
                     <img src="assests/chevron.png" alt="">
                 </div>
                 <div class="test-button">
-                    <a href="apply.html" > <button class="btn-one" >
-                        apply now
-                    </button></a> 
+                    <a href="apply.html"> <button class="btn-one">
+                            apply now
+                        </button></a>
                 </div>
             </div>
         </div>
-        
+
         <div class="testimonial-div">
             <div class="test-row">
                 <div class="test-col">
@@ -374,17 +428,20 @@
                 </div>
                 <div class="test-col">
                     <h1>About Us</h1>
-                    <span>We will help you build your clients in the most effective & efficient manner by training you on different techniques of prospecting. "Want to Become an LIC Agent? - A Smart Career Be An LIC Agent."</span>
+                    <span>We will help you build your clients in the most effective & efficient manner by training you
+                        on different techniques of prospecting. "Want to Become an LIC Agent? - A Smart Career Be An LIC
+                        Agent."</span>
                 </div>
                 <div class="test-col">
                     <h1>Social Media</h1>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos molestias sed dolores consequatur saepe beatae praesentium est possimus quia obcaecati.</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos molestias sed dolores
+                        consequatur saepe beatae praesentium est possimus quia obcaecati.</span>
                 </div>
             </div>
-            
+
         </div>
         <div class="disclaimer">
-           <p>This website is created by @Nothing team </p> 
+            <p>This website is created by @Nothing team </p>
         </div>
     </section>
 
