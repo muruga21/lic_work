@@ -78,11 +78,11 @@ nav{
 
 .plan-btn{
     background:transparent;
-    color: var(--peach-blue) !important;
-    transition: 0.5s;
+    /* color: var(--peach-blue) !important;
+    transition: 0.5s; */
 }
 .policy-btn{
-    background:var(--peach-blue);
+    background:transparent;
     color: var(--light-blue) !important;
     transition: 0.5s;
 }
@@ -99,7 +99,7 @@ nav{
 
     /* nav-bar for mobile screen */
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 768px) {
    .left-side img{
     display: none;
    }
@@ -120,7 +120,7 @@ nav{
     z-index: 2;
     min-height: 100vh;
     width: 45%;
-    background:var(--peach-blue);
+    background:#336077;
     color:#fff;
     text-align: center;
     display: block;
@@ -153,12 +153,7 @@ nav{
     cursor: pointer;
     padding: 3%;
    }
-   #close:hover{
-    background:#fff;
-    color: var(--peach-blue);
-    border-radius: 100%;
-    
-   }
+  
 
 }
 
@@ -215,7 +210,6 @@ form{
     width: 80%;
     border: 0;
     outline: 0;
-    transition: .5s;
     background:transparent;
     border: 1px solid #336077;
     border-bottom: 3px solid #336077;
@@ -227,7 +221,7 @@ form{
 
 .form-act-details input:focus , .form-act-details textarea:focus{
     opacity: 1;
-    border: 3px solid var(--dark-blue);
+    border: 2px solid var(--dark-blue);
 }
 
 ::placeholder{
