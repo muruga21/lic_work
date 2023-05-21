@@ -16,6 +16,21 @@ html{
     scroll-behavior: smooth;
 }
 
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 20px 20px;
+    background: var(--gray-blue);
+    border-radius: 100%;
+    color: #fff;
+    font-size:15px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+
 :root{
     --dark-blue:#2A2F4F; 
    --gray-blue:#336077;
